@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkunActivity2"
+    android:background="@color/bg">
+
+    <include
+        layout="@layout/toolbar_akun2"
+        android:id="@+id/toolbar_akun2"/>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar_akun2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profil_text"
+            style="@style/text_akun2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:id="@+id/tv_profil_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_lengkap"
+            style="@style/text_akun2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="129dp"
+            android:layout_marginTop="29dp"/>
+
+        <TextView
+            android:id="@+id/tv_profil_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_telepon"
+            style="@style/text_akun2"
+            android:layout_alignLeft="@id/tv_profil_nama"
+            android:layout_marginRight="129dp"
+            android:layout_below="@id/tv_profil_nama"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/view_profile"/>
+
+        <TextView
+            android:id="@+id/txt_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat_text"
+            style="@style/text_akun2"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="72dp"
+            android:layout_below="@id/txt_profil"/>
+
+        <TextView
+            android:id="@+id/tv_alamat_akun2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat_isi_text"
+            style="@style/text_akun2"
+            android:layout_alignLeft="@id/tv_profil_no"
+            android:layout_below="@id/tv_profil_no"
+            android:layout_marginTop="58dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/view_alamat"
+            android:layout_below="@id/view_profile"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/btn_tambah_alamat"
+            android:layout_below="@id/tv_alamat_akun2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="58dp"
+            android:background="@color/bg"
+            android:text="@string/btn_tambah_alamat"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

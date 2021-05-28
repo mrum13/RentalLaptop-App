@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UbahProfilActivity"
+    android:background="@color/bg">
+
+    <include
+        layout="@layout/toolbar_ubah_profil"
+        android:id="@+id/toolbar_ubah_profil"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_ubah_profil">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:src="@drawable/ic_icon_daftar"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/dp_akun"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ubah"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/dp_akun"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/text_nama_ubah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_ubah"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_below="@id/dp_akun"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/atur_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atur_sekarang"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_below="@id/dp_akun"
+            android:layout_marginTop="55dp"
+            android:layout_toLeftOf="@id/ic_atur_nama"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:id="@+id/ic_atur_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_atur_sekarang"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/atur_nama"/>
+
+        <TextView
+            android:id="@+id/text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_below="@id/atur_nama"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/atur_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atur_sekarang"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_alignTop="@id/text_user"
+            android:layout_toLeftOf="@id/ic_atur_nama"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:id="@+id/ic_atur_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_atur_sekarang"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/atur_user"/>
+
+        <TextView
+            android:id="@+id/text_handphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/handphone"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_below="@id/atur_user"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/atur_handphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_ubah"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_alignTop="@id/text_handphone"
+            android:layout_toLeftOf="@id/ic_atur_nama"
+            android:layout_marginRight="15dp"/>
+
+        <ImageView
+            android:id="@+id/ic_atur_handphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_atur_sekarang"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/atur_handphone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

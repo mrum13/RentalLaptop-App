@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="169dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="18px"
+    android:layout_marginHorizontal="12dp"
+    android:id="@+id/card_merk"
+    android:layout_marginTop="12dp"
+    android:background="@color/bg"
+    android:backgroundTint="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/acer"
+            android:id="@+id/gambar_merk"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama laptop"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/gambar_merk"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

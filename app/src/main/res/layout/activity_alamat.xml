@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlamatActivity"
+    android:background="@color/bg">
+
+    <include
+        layout="@layout/toolbar_alamat"
+        android:id="@+id/toolbar_ubah_alamat"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_ubah_alamat">
+
+        <TextView
+            android:id="@+id/tv_atas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat_pengantaran"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:layout_marginTop="49dp"
+            android:layout_marginLeft="52dp"/>
+
+        <TextView
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:text="@string/alamatnya"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="52dp"
+            android:layout_below="@id/tv_atas" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lokasi"
+            android:layout_toRightOf="@id/tv_atas"
+            android:layout_marginTop="69dp"
+            android:layout_marginLeft="95dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

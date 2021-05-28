@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".KeranjangFragment"
+    android:background="@color/bg">
+
+    <include
+        layout="@layout/toolbar_keranjang"
+        android:id="@+id/toolbar_keranjang"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_atas_keranjang1"
+        android:layout_below="@id/toolbar_keranjang"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/acer"
+                android:id="@+id/gambar_merk"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/tv_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nama laptop"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/gambar_merk"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_below="@id/card_atas_keranjang1"
+        android:layout_marginTop="19dp"
+        app:cardCornerRadius="8dp"
+        android:background="@color/card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Sewa : Rp. 250.000"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingVertical="14dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/btn_tambah"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/angka"/>
+
+            <TextView
+                android:id="@+id/angka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="14dp"
+                android:layout_toLeftOf="@id/btn_kurang"/>
+
+            <TextView
+                android:id="@+id/btn_kurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="24sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_daftar"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_sewaKeranjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sewa"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginVertical="12dp"/>
+
+        <TextView
+            android:id="@+id/tvsubtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Total: Rp"
+            android:layout_toLeftOf="@id/subtotal"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_toLeftOf="@id/btn_sewaKeranjang"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

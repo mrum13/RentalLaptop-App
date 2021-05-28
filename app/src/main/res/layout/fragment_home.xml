@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:background="@color/bg">
+
+    <include
+        layout="@layout/toolbar_search"
+        android:id="@+id/toolbar_search_home"/>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="163dp"-->
+<!--        android:layout_below="@id/toolbar_search_home"-->
+<!--        android:layout_marginTop="18dp"-->
+<!--        android:id="@+id/rv_merk"-->
+<!--        tools:listitem="@layout/item_merk"/>-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/nav_host_fragment_home"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_below="@id/rv_merk"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_search_home">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_acer"
+            android:layout_width="146dp"
+            android:layout_height="146dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/tengah1"
+            app:cardCornerRadius="24dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/acer"
+                android:scaleType="centerInside"
+                android:padding="24dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/tengah1"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_lenovo"
+            android:layout_width="146dp"
+            android:layout_height="146dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignLeft="@id/tengah1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            app:cardCornerRadius="24dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/lenovo"
+                android:scaleType="centerInside"
+                android:padding="24dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_asus"
+            android:layout_width="146dp"
+            android:layout_height="146dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/tengah1"
+            android:layout_below="@id/cv_acer"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="24dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/asus"
+                android:scaleType="centerInside"
+                android:padding="24dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/tengah2"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_macbook"
+            android:layout_width="146dp"
+            android:layout_height="146dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignLeft="@id/tengah2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            app:cardCornerRadius="24dp"
+            android:layout_alignBottom="@id/cv_asus">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/apple"
+                android:scaleType="centerInside"
+                android:padding="24dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_HP"-->
+<!--            android:layout_width="146dp"-->
+<!--            android:layout_height="146dp"-->
+<!--            android:layout_marginLeft="24dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignRight="@id/tengah1"-->
+<!--            android:layout_below="@id/cv_asus"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            app:cardCornerRadius="24dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/hp"-->
+<!--                android:scaleType="centerInside"-->
+<!--                android:padding="24dp"/>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <View-->
+<!--            android:id="@+id/tengah3"-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_centerHorizontal="true"/>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_"-->
+<!--            android:layout_width="146dp"-->
+<!--            android:layout_height="146dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_alignLeft="@id/tengah2"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="24dp"-->
+<!--            android:layout_alignBottom="@id/cv_asus">-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

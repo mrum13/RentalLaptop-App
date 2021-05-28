@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Rentop</string>
+    <string name="splash2">Rental Laptop Memudahkan Anda dalam Mencari Laptop sesuai kebutuhan</string>
+    <string name="btn_splash2">Gabung Sekarang</string>
+    <string name="toolbar_daftar">Daftar Sekarang</string>
+    <string name="str_daftar">Email atau Nomor Ponsel</string>
+    <string name="btn_daftar">Daftar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pesan_text">Anda belum memiliki pesan apapun</string>
+    <string name="akun_text">Pengaturan Akun</string>
+    <string name="btn_keluar_text">Keluar</string>
+    <string name="username">Username</string>
+    <string name="profil_text">Profil Saya</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="no_telepon">No Telepon</string>
+    <string name="alamat_text">Alamat Saya</string>
+    <string name="alamat_isi_text">Provinsi, Kota, Kecamatan, Kode Pos Nama Jalan, Gedung, No. Rumah</string>
+    <string name="btn_tambah_alamat">Tambah alamat baru</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="alamat">Alamat Saya</string>
+    <string name="simpan">Simpan</string>
+    <string name="ubah">Ubah</string>
+    <string name="nama_ubah">Nama</string>
+    <string name="user_ubah">Username</string>
+    <string name="handphone">Handphone</string>
+    <string name="atur_sekarang">Atur Sekarang</string>
+    <string name="no_ubah">0852563xxxxx</string>
+    <string name="alamat_pengantaran">Alamat Pengantaran</string>
+    <string name="alamatnya">Aulia Ilham Ayu(+62) 853-56356195Jl. Sultan HasanuddinKota Makassar </string>
+    <string name="sewa1">Sewa</string>
+    <string name="sewa2">Penyewaan</string>
+</resources>

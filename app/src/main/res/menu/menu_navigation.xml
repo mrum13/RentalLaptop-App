@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Utama"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/navigation_keranjang"
+        android:title="Keranjang"
+        android:icon="@drawable/ic_keranjang"/>
+
+    <item
+        android:id="@+id/navigation_pesan"
+        android:title="Pesan"
+        android:icon="@drawable/ic_pesan"/>
+
+    <item
+        android:id="@+id/navigation_akun"
+        android:title="Saya"
+        android:icon="@drawable/ic_saya"/>
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesanFragment"
+    android:background="@color/bg">
+
+    <ImageView
+        android:id="@+id/ic_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="191dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan_text"
+        android:textSize="18dp"
+        android:textColor="@color/text"
+        android:layout_below="@id/ic_pesan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="22dp"/>
+
+</RelativeLayout>

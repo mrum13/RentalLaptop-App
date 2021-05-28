@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SewaActivity2"
+    android:background="@color/bg">
+
+    <include
+        layout="@layout/toolbar_sewa2"
+        android:id="@+id/toolbar_sewa2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_sewa2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativesewa2">
+
+            <TextView
+                android:id="@+id/tv_atas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alamat_pengantaran"
+                android:textColor="@color/text"
+                android:textSize="18sp"
+                android:layout_marginTop="38dp"
+                android:layout_marginLeft="41dp"/>
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="@string/alamatnya"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="41dp"
+                android:layout_below="@id/tv_atas" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lokasi"
+                android:layout_toRightOf="@id/tv_atas"
+                android:layout_marginTop="69dp"
+                android:layout_marginLeft="95dp"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_nama_detail_laptop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="24dp"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/relativesewa2"
+            app:cardBackgroundColor="@color/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nama_detail_laptop"
+                    android:textSize="20sp"
+                    android:text="Total Pembayaran :"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="21dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Rp. 275.000  |  1 hari"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/nama_detail_laptop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="21dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_sedang_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="24dp"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/cv_nama_detail_laptop"
+            app:cardBackgroundColor="#9790D7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_antar"
+                    android:textSize="18sp"
+                    android:text="Sedang dalama proses pengantaran"
+                    android:textColor="@color/white"
+                    android:layout_marginVertical="21dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ok"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="34dp"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="70dp"
+            android:paddingVertical="12dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
