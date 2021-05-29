@@ -18,22 +18,20 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         loadFragment(new HomeFragment());
+        BottomNavigationView navView =findViewById(R.id.bn_main);
 
         if(getIntent().hasExtra("pesan")) {
-
             loadFragment(new PesanFragment());
+            navView.setSelectedItemId(R.id.navigation_pesan);
 //            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
         }else if(getIntent().hasExtra("keranjang")) {
-
+            navView.setSelectedItemId(R.id.navigation_keranjang);
             loadFragment(new KeranjangFragment());
         } else if(getIntent().hasExtra("ok")) {
 
             loadFragment(new HomeFragment());
         }
 
-
-
-        BottomNavigationView navView =findViewById(R.id.bn_main);
         navView.setOnNavigationItemSelectedListener(this);
     }
 
